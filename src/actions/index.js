@@ -10,9 +10,11 @@ export const DECREMENT = 'DECREMENT';
 // is left to the reducer(s).
 
 export const increment = () => {
-  // Fill in this function
-};
+  return { type: INCREMENT } ;
+}
 
 export const decrement = () => {
-  // Fill in this function
-};
+  return { type: DECREMENT } ;
+}
+// The action component or function exports just the description
+// of the operation to be included as the type of store change
