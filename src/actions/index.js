@@ -9,12 +9,12 @@ export const DECREMENT = 'DECREMENT';
 // logic of updating the central Redux store. That
 // is left to the reducer(s).
 
-export const increment = () => {
-  return { type: INCREMENT } ;
+export const increment = (payload) => {
+  return { type: INCREMENT, payload:1 } ;
 }
 
-export const decrement = () => {
-  return { type: DECREMENT } ;
+export const decrement = (payload) => {
+  return { type: DECREMENT, payload:-1 } ;
 }
 // The action component or function exports just the description
 // of the operation to be included as the type of store change
