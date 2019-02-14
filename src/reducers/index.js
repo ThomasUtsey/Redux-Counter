@@ -13,9 +13,9 @@ export default (state = initialState, action) => {
   console.log(state);
   switch (action.type) {
     case INCREMENT:
-    return [...state,action.INCREMENT]
+    return initialState + 1
     case DECREMENT:
-    return [...state,action.DECREMENT]
+    return initialState - 1
     default:
       return state;
   }
